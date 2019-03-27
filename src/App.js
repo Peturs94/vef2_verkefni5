@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './routes/home/Home';
 import Lecture from './routes/lecture/Lecture';
-import NotFound from './routes/notfound/NotFound';
+import NotFound from './routes/notFound/notfound';
 
 
 import './App.scss';

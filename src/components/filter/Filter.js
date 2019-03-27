@@ -20,15 +20,21 @@ class Filter extends Component {
         onFilter(active);
     }
 
-render() {
-    return(
-        <div className="Filter">
-            <button onClick={this.onClickHandler('html')}>HTML</button>
-            <button onClick={this.onClickHandler('css')}>CSS</button>
-            <button onClick={this.onClickHandler('javascript')}>javascript</button>
-        </div>
-    );
-}    
+    render() {
+        return(
+            <ul className="filters">
+                <li>
+                    <button className="filters__filter filters__filter--html" onClick={this.onClickHandler('html')}>HTML</button>
+                </li>
+                <li>
+                    <button className="filters__filter filters__filter--html" onClick={this.onClickHandler('css')}>CSS</button>
+                </li>
+                <li>
+                    <button className="filters__filter filters__filter--html" onClick={this.onClickHandler('javascript')}>JS</button>
+                </li>
+            </ul>
+        );
+    }    
 }
 
 export default Filter;

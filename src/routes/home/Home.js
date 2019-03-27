@@ -13,7 +13,6 @@ export default class Home extends Component {
   }
 
   onFilter = (active) => {
-    console.log(active, 'Home state');
     this.setState({ lectures: getLectureList(active) });
   }
 
